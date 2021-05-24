@@ -1,14 +1,14 @@
 import React from 'react'
-import { StyleSheet, Text, View } from 'react-native'
+import { StyleSheet, Text, View, SafeAreaView } from 'react-native'
 
-import Stories from './../../components/ProfilePicture/Stories/Stories';
+
 import Feed from './../../components/Feed/Feed';
 
 export default function Index() {
     return (
-        <>
+        <SafeAreaView>
             <Feed />
-        </>
+        </SafeAreaView>
     )
 }
 

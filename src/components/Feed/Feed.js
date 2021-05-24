@@ -5,6 +5,7 @@ import Stories from './../ProfilePicture/Stories/Stories';
 
 const data = [
     {
+        id: '1',
         user: {
             imageUri: 'https://mooscle.com/app/uploads/2019/03/Apple-1.png',
             name: 'Apple'
@@ -15,6 +16,7 @@ const data = [
         postedAt: '10 minutes ago'
     },
     {
+        id: '2',
         user: {
             imageUri: 'https://mooscle.com/app/uploads/2019/03/Apple-1.png',
             name: 'Apple'
@@ -25,6 +27,7 @@ const data = [
         postedAt: '10 minutes ago'
     },
     {
+        id: '3',
         user: {
             imageUri: 'https://mooscle.com/app/uploads/2019/03/Apple-1.png',
             name: 'Apple'
@@ -35,6 +38,7 @@ const data = [
         postedAt: '10 minutes ago'
     },
     {
+        id: '4',
         user: {
             imageUri: 'https://mooscle.com/app/uploads/2019/03/Apple-1.png',
             name: 'Apple'
@@ -45,6 +49,7 @@ const data = [
         postedAt: '10 minutes ago'
     },
     {
+        id: '5',
         user: {
             imageUri: 'https://mooscle.com/app/uploads/2019/03/Apple-1.png',
             name: 'Apple'
@@ -62,7 +67,7 @@ export default function Feed() {
         <FlatList
             data={data}
             renderItem={({ item }) => <Post post={item} />}
-            keyExtractor={item => item.imageUri}
+            keyExtractor={item => item.id}
             ListHeaderComponent={Stories}
         />
 
